@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李伟杰的个人主页</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ① 顶部导航 -->
+  <header class="navbar">
+    <nav class="container nav-inner">
+      <a class="nav-logo" href="#home">李伟杰</a>
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="展开导航菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">首页</a></li>
+        <li><a href="#education">教育背景</a></li>
+        <li><a href="#projects">项目经历</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ② 首屏 -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="avatar" aria-label="头像占位">
+          <svg viewBox="0 0 24 24" width="72" height="72" fill="currentColor" aria-hidden="true">
+            <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.42 0-8 2.69-8 6v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1c0-3.31-3.58-6-8-6Z"/>
+          </svg>
+        </div>
+        <h1 class="hero-name">李伟杰</h1>
+        <p class="hero-tagline">准前端开发・2023届・AI 辅助开发，完成多个网页实战项目</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">查看项目</a>
+          <a class="btn btn-ghost" href="#contact">联系我</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 教育背景 -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">教育背景</h2>
+        <article class="card edu-card">
+          <div class="edu-head">
+            <h3 class="edu-school">金陵科技学院</h3>
+            <span class="edu-time">2023.09 – 2027.06</span>
+          </div>
+          <p class="edu-major">计算机科学与技术 · 本科</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ④ 项目经历 -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">项目经历</h2>
+        <div class="project-grid">
+          <article class="card project-card">
+            <h3 class="project-title">猜数字游戏</h3>
+            <p class="muted">使用 HTML/CSS/JS 实现网页猜数字；实现随机数、输入校验、提示反馈；完成可直接运行的交互网页。</p>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+          <article class="card project-card">
+            <h3 class="project-title">记账本网页</h3>
+            <p class="muted">原生 JS 做简易记账；实现新增、删除记账记录；本地存储保存数据。</p>
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>本地存储</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑤ 技能 -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">技能</h2>
+        <div class="tag-cloud">
+          <span class="tag tag-lg">HTML</span>
+          <span class="tag tag-lg">CSS</span>
+          <span class="tag tag-lg">JavaScript</span>
+          <span class="tag tag-md">Git</span>
+          <span class="tag tag-md">GitHub</span>
+          <span class="tag tag-md">AI 辅助开发</span>
+          <span class="tag tag-sm">网页调试</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ 联系方式 -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">联系方式</h2>
+        <div class="contact-list">
+          <a class="contact-item card" href="mailto:1245075657@qq.com">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span>邮箱：1245075657@qq.com</span>
+          </a>
+          <a class="contact-item card" href="https://gitee.com/li-weijie01"
+             target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="6" cy="6" r="2.5"/>
+              <circle cx="6" cy="18" r="2.5"/>
+              <circle cx="18" cy="9" r="2.5"/>
+              <path d="M6 8.5v7M18 11.5V14a2 2 0 0 1-2 2H8"/>
+            </svg>
+            <span>Gitee：gitee.com/li-weijie01</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> 李伟杰 · 个人主页</p>
+      <p>本页由 AI 辅助开发 · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
